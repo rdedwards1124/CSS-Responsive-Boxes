@@ -1,3 +1,46 @@
 body {
   background: papayawhip;
 }
+
+.a {
+  background: red;
+  width: 1000px;
+}
+
+.b {
+  background: blue;
+  width: 600px;
+}
+
+.c {
+  background: yellow;
+  width: 200px;
+}
+
+.d {
+  background: orange;
+  width: 200px;
+}
+
+.e {
+  background: purple;
+  width: 200px;
+}
+
+.f {
+  background: pink;
+}
+
+.a, .b, .c, .d, .e{
+  height: 100px;
+}
+
+.f {
+  height: 200px;
+  width: 200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
