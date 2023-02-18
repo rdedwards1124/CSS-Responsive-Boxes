@@ -1,46 +1,119 @@
 body {
   background: papayawhip;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
 }
 
 .a {
   background: red;
-  width: 1000px;
+  height: 200px;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
 }
 
 .b {
   background: blue;
-  width: 600px;
+  height: 200px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .c {
   background: yellow;
-  width: 200px;
+  height: 200px;
+  width: 30%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .d {
   background: orange;
-  width: 200px;
+  height: 200px;
+  width: 30%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .e {
   background: purple;
-  width: 200px;
+  height: 200px;
+  width: 30%;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .f {
   background: pink;
+  height: 410px;
+  width: 20%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 2.5%;
 }
 
-.a, .b, .c, .d, .e{
-  height: 100px;
-}
-
-.f {
-  height: 200px;
-  width: 200px;
+.inside-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 67.5%;
+  max-height: 500px;
+  margin-left: 5%;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
+  max-height: 700px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .container {
+      display: block;
+  }
+
+  .a {
+    height: 100px;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .b {
+    height: 300px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+  }
+
+  .c, .d, .e {
+    height: 100px;
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .f {
+    width: 90%;
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .inside-container {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
