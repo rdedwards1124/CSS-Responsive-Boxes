@@ -13,7 +13,9 @@ body {
   margin-right: 5%;
   margin-top: 5px;
   margin-bottom: 5px;
-  
+  text-align: center; /* These next 3 lines... */
+  vertical-align: middle; /* ... make the text stay directly in the center of the div */
+  line-height: 200px; /* also, line-height should be =2 height of the div */
 }
 
 .b {
@@ -22,6 +24,9 @@ body {
   width: 100%;
   margin-top: 5px;
   margin-bottom: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
 }
 
 .c {
@@ -30,6 +35,9 @@ body {
   width: 30%;
   margin-top: 5px;
   margin-bottom: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
 }
 
 .d {
@@ -38,6 +46,9 @@ body {
   width: 30%;
   margin-top: 5px;
   margin-bottom: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
 }
 
 .e {
@@ -46,6 +57,9 @@ body {
   width: 30%;
   margin-top: 5px;
   margin-bottom: 5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
 }
 
 .f {
@@ -55,6 +69,9 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
   margin-left: 2.5%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 410px;
 }
 
 .inside-container {
@@ -85,14 +102,15 @@ body {
     margin-bottom: 5px;
     margin-left: 5%;
     margin-right: 5%;
-  }
+    line-height: 100px; /* line-height changed because height of the div changed */
+  }                     /* this is needed to keep the text in the middle */
 
   .b {
     height: 300px;
     width: 100%;
     margin-top: 5px;
     margin-bottom: 5px;
-    
+    line-height: 300px;
   }
 
   .c, .d, .e {
@@ -100,6 +118,7 @@ body {
     width: 30%;
     margin-top: 5px;
     margin-bottom: 5px;
+    line-height: 100px;
   }
 
   .f {
@@ -109,6 +128,7 @@ body {
     margin-bottom: 5px;
     margin-left: 5%;
     margin-right: 5%;
+    line-height: 100px;
   }
 
   .inside-container {
